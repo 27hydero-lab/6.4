@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+        <script src="https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-camera><a-cursor></a-cursor></a-camera>      
+       <a-plane static-body="debug:true; gravity:-100 -70>"
+       position="0 0 -4" 
+       rotation="-90 0 0"
+       width="100"
+       height="100"
+       color="#7BC8A4">
+       </a-plane>
+       
+       <a-sphere 
+       dynamic-body
+       position="-4 9 -9" 
+       radius=".5"
+       color="red"
+       ></a-sphere>
+
+<a-box  
+static-body="debug:true; gravity:-50 -60>"
+position="0 4 -9" wa
+depth="0.5"
+height="2"
+width="0.7" 
+color="tomato"
+rotation=" 0 0 140"
+></a-box>
+
+<a-box  static-body="debug:true; gravity:-50 -60>"
+position="-4 7 -9" 
+depth="0.5"
+height="2"
+width="0.7" 
+color="tomato"
+rotation=" 0 0 50"
+></a-box>
+
+    <a-cone        static-body
+    color="blue" 
+    radius-bottom="1"
+    radius-top="1" 
+    height=".5" 
+    position="-4 .5 -9"
+    rotation=" 0 0 0"
+    ></a-cone>
+    
+    <a-plane dynamic-body
+    position="-6 2 -9" 
+    rotation="0 90 0"
+    width="3"
+    height="3" 
+    color="blue"></a-plane>
+     
+    <a-plane dynamic-body
+    position="-9 2 -9" 
+    rotation="0 90 0"
+    width="3"
+    height="3" 
+    color="blue"></a-plane>
+    
+        <a-plane dynamic-body
+    position="-11 2 -9" 
+    rotation="0 90 0"
+    width="3"
+    height="3" 
+    color="red"></a-plane>
+    
+        <a-plane dynamic-body
+    position="-13 2 -9" 
+    rotation="0 90 0"
+    width="3"
+    height="3" 
+    color="black"></a-plane>
+    
+        <a-plane dynamic-body="debug:true; gravity:100 -70>"
+    position="-15 2 -9" 
+    rotation="0 90 0"
+     width="3"
+    height="3" 
+    color="yellow"></a-plane>
+    
+    <a-box dynamic-body
+    position="-14 4 -9" 
+    depth=".5"
+    height=".5" 
+    width=".5" 
+    color="tomato"></a-box>
+    
+     <a-plane dynamic-body="debug:true; gravity:100 -70>"
+    position="-14 3 -9" 
+    rotation="90 0 0"
+    width="3"
+    height="3" 
+    color="yellow"></a-plane>
+    
+
+        </a-scene>
+    </body>
+</html>
